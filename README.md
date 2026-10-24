@@ -10,6 +10,7 @@ Scope is January 2026 delivery, national wind only, from Elexon BMRS:
 ## Live app
 
 - Production: https://nq7vmk.vercel.app
+- Code: https://github.com/Adil179/nq7vmk
 - Inspect: https://vercel.com/self-c154/nq7vmk
 
 ## What the product does
