@@ -114,13 +114,3 @@ Set `PORT` from the platform; the image already reads it.
 ## AI tools
 
 Cursor (Grok) was used to research Elexon/BMRS and EPEX GB gate timing, write the FastAPI + React app, Docker/Vercel wiring, and tests. Domain choices (09:20 vintage rule, hourly alignment, error metrics) were implemented explicitly in `backend/app/processing.py` and `backend/app/metrics.py` so they can be reviewed without relying on the chat.
-
-## Demo video
-
-Record an unlisted YouTube video (max 10 minutes) with two halves. Suggested beats:
-
-**Part 1 — client (≤5 min):** problem (DA buy vs weather-driven wind); 09:20 gate; pick a January day; show the vintage used vs later unused publishes; forecast vs outturn and P90 band; switch to Forecast skill and walk MAE/bias/energy gap and what it means for residual thermal/wholesale cover.
-
-**Part 2 — tech lead (≤5 min):** architecture (ingest → processed.json → FastAPI → React); why not “latest WINDFOR”; alignment of HH vs hourly; tests; Docker; no extra data sources.
-
-Paste the unlisted URL into the submission form after checking it in incognito.
