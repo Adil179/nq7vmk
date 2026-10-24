@@ -89,15 +89,15 @@ python -m app.ingest
 
 ## Deploy
 
-### Vercel (frontend + Python `/api`)
+### Vercel (Vite frontend + FastAPI)
 
-The repo is set up for Vercel: static UI from `frontend/dist`, FastAPI behind `api/index.py`.
+`vercel.json` defines two services: `frontend/` (Vite) and `backend/` (`app.main:app`). `/api/*` is rewritten to FastAPI.
 
 ```bash
-npx vercel --prod
+npx vercel --prod --yes --project nq7vmk
 ```
 
-Include `backend/data/processed.json` in the deployment (it is committed).
+`backend/data/processed.json` is committed so the deployment does not call Elexon at runtime.
 
 ### Docker on Heroku (or any container host)
 
